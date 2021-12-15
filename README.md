@@ -26,7 +26,7 @@
 
 ### CS
 
-- 컴퓨팅사고
+- [컴퓨팅사고](https://github.com/leejaypower/TIL/blob/main/컴퓨팅사고/컴퓨팅사고.md)
   - 2진법
   - 정보의 표현
   - 알고리즘
