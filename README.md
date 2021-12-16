@@ -24,10 +24,10 @@
 
 -
 
-### CS
+### CS50 2019
 
 - [컴퓨팅사고](https://github.com/leejaypower/TIL/blob/main/컴퓨팅사고/컴퓨팅사고.md)
   - [2진법](<https://github.com/leejaypower/TIL/blob/main/컴퓨팅사고/binary(2진법).md>)
-  - 정보의 표현
+  - [정보의 표현](https://github.com/leejaypower/TIL/blob/main/컴퓨팅사고/정보의표현.md)
   - 알고리즘
   - 스크래치
