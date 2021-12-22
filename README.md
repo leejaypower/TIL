@@ -30,4 +30,5 @@
   - [2진법](<https://github.com/leejaypower/TIL/blob/main/컴퓨팅사고/binary(2진법).md>)
   - [정보의 표현](https://github.com/leejaypower/TIL/blob/main/컴퓨팅사고/정보의표현.md)
   - [알고리즘](https://github.com/leejaypower/TIL/blob/main/컴퓨팅사고/알고리즘.md)
-  - 스크래치
+- C언어
+  - [C기초](https://github.com/leejaypower/TIL/blob/main/C언어/C기초.md)
