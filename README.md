@@ -33,3 +33,4 @@
 - C언어
   - [C기초](https://github.com/leejaypower/TIL/blob/main/C언어/C기초.md)
   - [문자열](https://github.com/leejaypower/TIL/blob/main/C언어/문자열.md)
+  - [조건문과 루프](https://github.com/leejaypower/TIL/blob/main/C언어/조건문과루프.md)
