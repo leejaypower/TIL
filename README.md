@@ -36,3 +36,4 @@
   - [조건문과 루프](https://github.com/leejaypower/TIL/blob/main/C언어/조건문과루프.md)
   - [자료형, 형식지정자, 연산자](https://github.com/leejaypower/TIL/blob/main/C언어/자료형,형식지정자,연산자.md)
   - [사용자정의함수, 중첩루프](https://github.com/leejaypower/TIL/blob/main/C언어/사용자정의함수,중첩루프.md)
+  - [하드웨어의 한계](https://github.com/leejaypower/TIL/blob/main/C언어/하드웨어의한계.md)
