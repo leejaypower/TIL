@@ -39,3 +39,4 @@
   - [하드웨어의 한계](https://github.com/leejaypower/TIL/blob/main/C언어/하드웨어의한계.md)
 - 배열
   - [컴파일링](https://github.com/leejaypower/TIL/blob/main/배열/컴파일링.md)
+  - [디버깅, 코드의 디자인](https://github.com/leejaypower/TIL/blob/main/배열/디버깅,코드의디자인.md)
