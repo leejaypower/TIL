@@ -40,3 +40,4 @@
 - 배열
   - [컴파일링](https://github.com/leejaypower/TIL/blob/main/배열/컴파일링.md)
   - [디버깅, 코드의 디자인](https://github.com/leejaypower/TIL/blob/main/배열/디버깅,코드의디자인.md)
+  - [배열](https://github.com/leejaypower/TIL/blob/main/배열/배열.md)
