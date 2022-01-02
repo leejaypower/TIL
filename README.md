@@ -38,7 +38,11 @@
   - [사용자정의함수, 중첩루프](https://github.com/leejaypower/TIL/blob/main/C언어/사용자정의함수,중첩루프.md)
   - [하드웨어의 한계](https://github.com/leejaypower/TIL/blob/main/C언어/하드웨어의한계.md)
 - 배열
+
   - [컴파일링](https://github.com/leejaypower/TIL/blob/main/배열/컴파일링.md)
   - [디버깅, 코드의 디자인](https://github.com/leejaypower/TIL/blob/main/배열/디버깅,코드의디자인.md)
   - [배열](https://github.com/leejaypower/TIL/blob/main/배열/배열.md)
   - [문자열과 배열](https://github.com/leejaypower/TIL/blob/main/배열/문자열과배열.md)
+
+- 알고리즘
+  - [알고리즘 표기법](https://github.com/leejaypower/TIL/blob/main/알고리즘/알고리즘표기법.md)
