@@ -46,3 +46,4 @@
 
 - 알고리즘
   - [알고리즘 표기법](https://github.com/leejaypower/TIL/blob/main/알고리즘/알고리즘표기법.md)
+  - [선형검색](https://github.com/leejaypower/TIL/blob/main/알고리즘/선형검색.md)
