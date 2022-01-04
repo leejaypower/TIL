@@ -26,26 +26,26 @@
 
 ### CS50 2019
 
-- [컴퓨팅사고](https://github.com/leejaypower/TIL/blob/main/컴퓨팅사고/컴퓨팅사고.md)
-  - [2진법](<https://github.com/leejaypower/TIL/blob/main/컴퓨팅사고/binary(2진법).md>)
-  - [정보의 표현](https://github.com/leejaypower/TIL/blob/main/컴퓨팅사고/정보의표현.md)
-  - [알고리즘](https://github.com/leejaypower/TIL/blob/main/컴퓨팅사고/알고리즘.md)
+- [컴퓨팅사고](https://github.com/leejaypower/TIL/blob/main/CS50/컴퓨팅사고/컴퓨팅사고.md)
+  - [2진법](<https://github.com/leejaypower/TIL/blob/main/CS50/컴퓨팅사고/binary(2진법).md>)
+  - [정보의 표현](https://github.com/leejaypower/TIL/blob/main/CS50/컴퓨팅사고/정보의표현.md)
+  - [알고리즘](https://github.com/leejaypower/TIL/blob/main/CS50/컴퓨팅사고/알고리즘.md)
 - C언어
-  - [C기초](https://github.com/leejaypower/TIL/blob/main/C언어/C기초.md)
-  - [문자열](https://github.com/leejaypower/TIL/blob/main/C언어/문자열.md)
-  - [조건문과 루프](https://github.com/leejaypower/TIL/blob/main/C언어/조건문과루프.md)
-  - [자료형, 형식지정자, 연산자](https://github.com/leejaypower/TIL/blob/main/C언어/자료형,형식지정자,연산자.md)
-  - [사용자정의함수, 중첩루프](https://github.com/leejaypower/TIL/blob/main/C언어/사용자정의함수,중첩루프.md)
-  - [하드웨어의 한계](https://github.com/leejaypower/TIL/blob/main/C언어/하드웨어의한계.md)
+  - [C기초](https://github.com/leejaypower/TIL/blob/main/CS50/C언어/C기초.md)
+  - [문자열](https://github.com/leejaypower/TIL/blob/main/CS50/C언어/문자열.md)
+  - [조건문과 루프](https://github.com/leejaypower/TIL/blob/main/CS50/C언어/조건문과루프.md)
+  - [자료형, 형식지정자, 연산자](https://github.com/leejaypower/TIL/blob/main/CS50/C언어/자료형,형식지정자,연산자.md)
+  - [사용자정의함수, 중첩루프](https://github.com/leejaypower/TIL/blob/main/CS50/C언어/사용자정의함수,중첩루프.md)
+  - [하드웨어의 한계](https://github.com/leejaypower/TIL/blob/main/CS50/C언어/하드웨어의한계.md)
 - 배열
 
-  - [컴파일링](https://github.com/leejaypower/TIL/blob/main/배열/컴파일링.md)
-  - [디버깅, 코드의 디자인](https://github.com/leejaypower/TIL/blob/main/배열/디버깅,코드의디자인.md)
-  - [배열](https://github.com/leejaypower/TIL/blob/main/배열/배열.md)
-  - [문자열과 배열](https://github.com/leejaypower/TIL/blob/main/배열/문자열과배열.md)
+  - [컴파일링](https://github.com/leejaypower/TIL/blob/main/CS50/배열/컴파일링.md)
+  - [디버깅, 코드의 디자인](https://github.com/leejaypower/TIL/blob/main/CS50/배열/디버깅,코드의디자인.md)
+  - [배열](https://github.com/leejaypower/TIL/blob/main/CS50/배열/배열.md)
+  - [문자열과 배열](https://github.com/leejaypower/TIL/blob/main/CS50/배열/문자열과배열.md)
 
 - 알고리즘
-  - [알고리즘 표기법](https://github.com/leejaypower/TIL/blob/main/알고리즘/알고리즘표기법.md)
-  - [선형검색](https://github.com/leejaypower/TIL/blob/main/알고리즘/선형검색.md)
-  - [버블정렬](https://github.com/leejaypower/TIL/blob/main/알고리즘/버블정렬.md)
-  - [선택정렬](https://github.com/leejaypower/TIL/blob/main/알고리즘/선택정렬.md)
+  - [알고리즘 표기법](https://github.com/leejaypower/TIL/blob/main/CS50/알고리즘/알고리즘표기법.md)
+  - [선형검색](https://github.com/leejaypower/TIL/blob/main/CS50/알고리즘/선형검색.md)
+  - [버블정렬](https://github.com/leejaypower/TIL/blob/main/CS50/알고리즘/버블정렬.md)
+  - [선택정렬](https://github.com/leejaypower/TIL/blob/main/CS50/알고리즘/선택정렬.md)
