@@ -52,4 +52,4 @@
   - [재귀](https://github.com/leejaypower/TIL/blob/main/CS50/알고리즘/재귀.md)
   - [병합정렬](https://github.com/leejaypower/TIL/blob/main/CS50/알고리즘/병합정렬.md)
 - 메모리
-  [메모리주소](https://github.com/leejaypower/TIL/blob/main/CS50/메모리/메모리주소.md)
+  - [메모리주소](https://github.com/leejaypower/TIL/blob/main/CS50/메모리/메모리주소.md)
