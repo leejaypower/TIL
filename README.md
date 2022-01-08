@@ -54,3 +54,4 @@
 - 메모리
   - [메모리주소](https://github.com/leejaypower/TIL/blob/main/CS50/메모리/메모리주소.md)
   - [문자열](https://github.com/leejaypower/TIL/blob/main/CS50/메모리/문자열.md)
+  - [메모리 할당과 해제](https://github.com/leejaypower/TIL/blob/main/CS50/메모리/메모리할당과해제.md)
