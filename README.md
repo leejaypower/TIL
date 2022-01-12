@@ -56,3 +56,4 @@
   - [문자열](https://github.com/leejaypower/TIL/blob/main/CS50/메모리/문자열.md)
   - [메모리 할당과 해제](https://github.com/leejaypower/TIL/blob/main/CS50/메모리/메모리할당과해제.md)
   - [메모리 교환, 스택, 힙](https://github.com/leejaypower/TIL/blob/main/CS50/메모리/메모리교환,스택,힙.md)
+  - [오버플로우, 입력받는 함수](https://github.com/leejaypower/TIL/blob/main/CS50/메모리/오버플로우,입력받는함수.md)
