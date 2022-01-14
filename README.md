@@ -43,6 +43,7 @@
   - [디버깅, 코드의 디자인](https://github.com/leejaypower/TIL/blob/main/CS50/배열/디버깅,코드의디자인.md)
   - [배열](https://github.com/leejaypower/TIL/blob/main/CS50/배열/배열.md)
   - [문자열과 배열](https://github.com/leejaypower/TIL/blob/main/CS50/배열/문자열과배열.md)
+  - [명령행 인자](https://github.com/leejaypower/TIL/blob/main/CS50/배열/명령행인자.md)
 
 - 알고리즘
   - [알고리즘 표기법](https://github.com/leejaypower/TIL/blob/main/CS50/알고리즘/알고리즘표기법.md)
