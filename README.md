@@ -59,3 +59,5 @@
   - [메모리 교환, 스택, 힙](https://github.com/leejaypower/TIL/blob/main/CS50/메모리/메모리교환,스택,힙.md)
   - [오버플로우, 입력받는 함수](https://github.com/leejaypower/TIL/blob/main/CS50/메모리/오버플로우,입력받는함수.md)
   - [파일 쓰기, 파일 읽기](https://github.com/leejaypower/TIL/blob/main/CS50/메모리/오버플로우,파일쓰기,읽기.md)
+- 자료구조
+  - [배열의 크기](https://github.com/leejaypower/TIL/blob/main/CS50/자료구조/배열의크기.md)
