@@ -62,3 +62,4 @@
 - 자료구조
   - [배열의 크기](https://github.com/leejaypower/TIL/blob/main/CS50/자료구조/배열의크기.md)
   - [연결 리스트](https://github.com/leejaypower/TIL/blob/main/CS50/자료구조/연결리스트.md)
+  - [해시 테이블](https://github.com/leejaypower/TIL/blob/main/CS50/자료구조/해시테이블.md)
