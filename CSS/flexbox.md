@@ -1,4 +1,4 @@
-# flexbox의 rule
+# flexbox
 
 ### flexbox container
 
@@ -23,7 +23,7 @@
 
 ```css
 .wrapper {
-  display: flex;
+  display: flex; /* flexbox container */
 }
 .box {
   width: 200px;
@@ -101,11 +101,11 @@ flex-direction: <b>column</b>의 경우, <b>main axis는 vertical(세로축)</b>
 ```
 
 <img src="./images/column-axis.png">
-<small>캡처 이미지에는 잘렸지만 1번 box의 위와 3번 box 아래에는 공간이 더 있다. </small>
+<small>화면 캡처상 이미지에는 잘렸지만 1번 box의 위와 3번 box 아래에는 공간이 더 있다. </small>
 
 <br>
 
-justify-content와 align-items의 사용을 헷갈리지 않으려면 main axis와 cross axis가 어디에 있는지 알아야 한다.
+<b>justify-content와 align-items의 사용을 헷갈리지 않으려면 main axis와 cross axis가 어디에 있는지 알아야 한다.</b>
 
 <br>
 
@@ -148,7 +148,6 @@ justify-content와 align-items의 사용을 헷갈리지 않으려면 main axis�
 ### flex-wrap
 
 flexbox는 item들이 너비가 바뀌더라도 모두 같은 줄에 있도록 유지하는 특성이 있다.<br>
-<b>flex-wrap : wrap;</b> 을 사용하면 item의 설정된 크기를 유지한다.
 
 ```html
 <html>
@@ -163,6 +162,7 @@ flexbox는 item들이 너비가 바뀌더라도 모두 같은 줄에 있도록 �
       <div class="box">4</div>
       <div class="box">5</div>
       <div class="box">6</div>
+      <div class="box">7</div>
     </div>
   </body>
 </html>
@@ -185,12 +185,20 @@ flexbox는 item들이 너비가 바뀌더라도 모두 같은 줄에 있도록 �
 }
 ```
 
+<img src="./images/nowrap.png">
+
+<br>
+
+<b>flex-wrap : wrap;</b> 을 사용하면 item의 설정된 크기를 유지한다.
+
+<img src="./images/wrap.png">
+
 <br>
 
 ### align-content
 
-- <b>align-content</b>는 wrap을 사용해 아이템을 정렬할 때 줄바꿈이 생기면 줄 사이와 주변에 빈 공간이 생기는데, 이를 조절할 때 사용한다.<br>
-- justify-content와 비슷하지만 cross axis에서의 item 주변 공간에 관한 것이다.<br>
+- <b>align-content</b>는 <b>wrap을 사용해 아이템을 정렬할 때</b> 줄바꿈이 생기면 줄 사이와 주변에 빈 공간이 생기는데, 이를 조절할 때 사용한다.<br>
+- <b>justify-content와 비슷하지만 cross axis에서의 item 주변 공간에 관한 것이다.</b><br>
 - <i>따라서 nowrap 상태에서는 아무 일도 일어나지 않는다.</i>
 
 ```css
@@ -204,3 +212,68 @@ flexbox는 item들이 너비가 바뀌더라도 모두 같은 줄에 있도록 �
                  ...
 }
 ```
+
+<br>
+
+### flex-shrink & flex-grow
+
+flex-wrap이 nowrap일 때, 한 줄에 아이템들이 들어가기 위해 너비가 무시될 수 있다.<br>
+이 때 <b>flex-shrink</b>는 element의 행동을 정의하는데, <b>어떤 flex item이 너비가 더 줄어들지를</b> 정할 수 있다.
+
+```css
+.box:nth-child(2) {
+  background: #000;
+  flex-shrink: 1; /* 기본값 */
+               2; /* 너비가 무시되는 시점에서 다른 item보다 2배 더 줄어든다.*/
+}
+```
+
+<img src="./images/flex-shrink.gif">
+
+<br>
+<br>
+
+<b>flex-grow</b>는 item들이 한 줄로 정렬되어 있을 때 남아있는 빈 공간을 가져와서 너비를 늘릴 수 있는 만큼 늘린다.
+<img src="./images/flex-grow2.gif">
+
+```css
+.box:nth-child(2) {
+  background: #000;
+  flex-shrink: 0; /* 기본값 */
+               1;
+}
+```
+
+- flex-grow의 기본값은 0이다.
+- 화면이 작아지면서 존재했던 빈 공간이 줄어들면 grow로 인해 늘어났던 너비는 줄어든다.
+
+  <img src="./images/flex-grow.gif">
+
+- 한 item에만 grow를 준다면, 그 item이 모든 여분의 공간을 차지하기 때문에 설정하는 숫자가 1이던지 2이던지 의미가 없다.
+- 하지만 여러 item에 grow 값을 준다면 빈 공간의 분배 비율에 따라 값을 주면 된다.
+
+이러한 속성은 반응형 디자인을 위해 유용하게 쓰일 수 있다.
+
+<br>
+
+### flew-basis
+
+<b>flex-basis</b>는 grow나 shrink 되기 전에 element에게 기본 크기를 주는 것이다.<br>
+<b>flex-basis는 main axis에서 작용하기 때문에</b> width와 같을 수도, height와 같을 수도 있다.
+
+```css
+.box{
+  flex-basis: auto /* 기본값 */
+              300px;
+              30%; /* 부모의 크기가 설정되있는 경우 %단위도 가능하다. */
+  background: peru;
+  color: white;
+  font-size: 50px;
+}
+```
+
+> flex-basis가 auto가 아닐 때 width나 height(main axis에 따라)를 동시에 적용한 경우 flex-basis가 우선이다.
+
+<br>
+<hr>
+<a href="https://nomadcoders.co/css-layout-masterclass">노마드코더 CSS Layout 마스터클래스</a> - flexbox로 공부한 내용입니다.
