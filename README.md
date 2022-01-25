@@ -15,9 +15,13 @@
 
 ## 📚 분류
 
-### HTML / CSS
+### HTML
 
 -
+
+### CSS
+
+- [flexbox](https://github.com/leejaypower/TIL/blob/main/CSS/flexbox.md)
 
 ### Javascript
 
