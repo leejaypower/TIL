@@ -1,6 +1,6 @@
 # flexbox
 
-### flexbox container
+## flexbox container
 
 <b>flexbox에서는 children과 이야기하지 않는다.</b>
 
@@ -36,7 +36,7 @@
 
 <br>
 
-### flex-direction
+## flex-direction
 
 - flex container의 flex-direction 기본 값은 <b>row</b>이다.
 
@@ -51,7 +51,7 @@
 
 <br>
 
-### flexbox의 axis
+## flexbox의 axis
 
 flex-direction: <b>row</b>일 때, <b>horizontal(가로축)이 main-axis(메인축)</b>이고, <b>cross axis는 vertical(세로축)</b>이다.
 
@@ -109,7 +109,7 @@ flex-direction: <b>column</b>의 경우, <b>main axis는 vertical(세로축)</b>
 
 <br>
 
-### align-self
+## align-self
 
 - <b>align-self</b>는 align-items와 같이 cross axis축으로 정렬하는 일을 한다.
 - 다만 부모가 자식을 옮기는 것이 아니라 <b>자식 아이템을 골라서 직접 위치를 변경할 때 사용한다.</b>
@@ -145,7 +145,7 @@ flex-direction: <b>column</b>의 경우, <b>main axis는 vertical(세로축)</b>
 
 <br>
 
-### flex-wrap
+## flex-wrap
 
 flexbox는 item들이 너비가 바뀌더라도 모두 같은 줄에 있도록 유지하는 특성이 있다.<br>
 
@@ -195,7 +195,7 @@ flexbox는 item들이 너비가 바뀌더라도 모두 같은 줄에 있도록 �
 
 <br>
 
-### align-content
+## align-content
 
 - <b>align-content</b>는 <b>wrap을 사용해 아이템을 정렬할 때</b> 줄바꿈이 생기면 줄 사이와 주변에 빈 공간이 생기는데, 이를 조절할 때 사용한다.<br>
 - <b>justify-content와 비슷하지만 cross axis에서의 item 주변 공간에 관한 것이다.</b><br>
@@ -215,7 +215,7 @@ flexbox는 item들이 너비가 바뀌더라도 모두 같은 줄에 있도록 �
 
 <br>
 
-### flex-shrink & flex-grow
+## flex-shrink & flex-grow
 
 flex-wrap이 nowrap일 때, 한 줄에 아이템들이 들어가기 위해 너비가 무시될 수 있다.<br>
 이 때 <b>flex-shrink</b>는 element의 행동을 정의하는데, <b>어떤 flex item이 너비가 더 줄어들지를</b> 정할 수 있다.
@@ -256,7 +256,7 @@ flex-wrap이 nowrap일 때, 한 줄에 아이템들이 들어가기 위해 너�
 
 <br>
 
-### flew-basis
+## flew-basis
 
 <b>flex-basis</b>는 grow나 shrink 되기 전에 element에게 기본 크기를 주는 것이다.<br>
 <b>flex-basis는 main axis에서 작용하기 때문에</b> width와 같을 수도, height와 같을 수도 있다.
