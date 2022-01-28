@@ -204,6 +204,7 @@ column과 row만을 사용해서 layout을 구성할 수도 있다.
 - <b>끝인 -1에서부터 처음으로 가는 방향으로 -2, -3, -4... 처럼 작성할 수 있다.</b>
 - span을 사용하는 방법도 있다.
 - <b>span은 시작점과 끝점을 작성하는 것을 대신해서, 얼마나 많은 cell을 갖는지를 적는다.</b>
+
 - span을 시작점이나 끝점작성과 혼용해서 쓸 수 있다.
 
 <hr>
@@ -238,8 +239,9 @@ column과 row만을 사용해서 layout을 구성할 수도 있다.
 ## fr
 
 fr은 fraction(부분)이라는 뜻으로, 하나의 측정단위이다.<br>
-<b>grid container에서 사용 가능한 공간을 말한다.</b><br>
-fr은 보이는 화면에서의 공간을 분배하기 때문에 반응형 디자인에 아주 유용하다.
+
+- <b>fr은 grid container에서 사용 가능한 공간을 말한다.</b><br>
+- fr은 보이는 화면에서의 공간을 분배하기 때문에 반응형 디자인에 아주 유용하다.
 
 ```css
 .grid {
@@ -303,3 +305,105 @@ grid-template는 위에서 배운 grid-template-areas, grid-template-columns gri
 - <b>grid template에서 repeat 함수는 사용할 수 없다!</b>
 - column의 폭을 작성하지 않으면 grid가 가질 수 있는 화면에서의 최대 너비를 가진다.
 - fr 덕분에 화면 크기가 변해도 비율은 똑같다.
+
+<br>
+
+## place items
+
+```css
+.grid {
+  display: grid;
+  gap: 5px;
+  height: 50vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  justify-items: stretch; /* 기본값  */
+                 start;
+                 center;
+                 end;
+                 ...
+  align-items :  stretch; /* 기본값 */
+                 start;
+                 end;
+                 ...
+
+  place-items : stretch  center;
+          /* align-items / justify-items */
+}
+.header {
+  background-color: green;
+}
+.content {
+  background-color: lightblue;
+}
+.nav {
+  background-color: purple;
+}
+.footer {
+  background-color: gray;
+}
+```
+
+- justify-items는 수평으로 아이템을 정렬한다. 기본값은 stretch.
+- <b>여기서 item은 grid cell 하나하나를 의미한다.</b>
+
+- stretch는 grid-container가 grid를 갖고 있을 때 grid를 늘여서 grid 자체를 채우도록 한다.
+- justify-items로 다른 조건(start, end...)을 주면 grid 내용물의 위치는 달라보이지만 여전히 같은 크기의 column과 row를 갖고있다.
+  <img alt="justify-items:start" src="./images/justify-items_start.png">
+
+- align-items은 flexbox와 마찬가지로 수직으로 아이템을 정렬한다.
+
+- 높이와 너비가 정해져 있지 않고, grid속 item의 내용물이 아무것도 없다면 화면에 나타나지 않는다.
+
+- item(grid container안의 div)에 높이와 너비를 주면 grid 박스 안에서 존재하고 움직인다.
+
+- <b>place-items는 justify-items와 align-items의 작성을 간략하게 해준다.(shortcut)</b>
+
+<br>
+
+## place content
+
+```css
+.grid {
+  display: grid;
+  gap: 5px;
+  height: 50vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+
+  justify-content: center;
+                   space-around;
+                   space-evenly;
+                   space-between;
+                   ...
+  place-content:   center  start;
+                  /* justify-content / align-content */
+}
+```
+
+- <b>grid container에서 content는 전체 grid를 의미한다.</b>
+
+- grid에는 전체 grid를 정렬하는 justify-content, align-content가 있다.
+
+<br>
+
+```css
+.header {
+  background-color: green;
+  place-self: center start;
+  /* justify-self / align-self */
+}
+.content {
+  background-color: lightblue;
+}
+.nav {
+  background-color: purple;
+}
+.footer {
+  background-color: gray;
+}
+```
+
+- place self(justify-self, align-self)는 grid container의 child에만 적용되는 property이다.
+- place-content로 적용된 것을 무시하고 개별적으로 움직인다.
