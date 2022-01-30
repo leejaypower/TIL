@@ -407,3 +407,65 @@ grid-template는 위에서 배운 grid-template-areas, grid-template-columns gri
 
 - place self(justify-self, align-self)는 grid container의 child에만 적용되는 property이다.
 - place-content로 적용된 것을 무시하고 개별적으로 움직인다.
+
+<br>
+
+## Auto Columns and Rows
+
+server에서 데이터를 가져와서 나타낼 경우, grid-template의 column이나 row를 데이터의 양만큼 동적으로 지정하지 않는다면 디자인이 무너질 것이다.
+
+<b>grid-auto-rows는 만약 더 많은 content가 있다면 따로 rows를 지정해 주지 않아도 default value를 자동으로 줘서 row를 생성한다.</b>
+
+```css
+.grid {
+  display: grid;
+  gap: 5px;
+  height: 50vh;
+
+  grid-template-columns: repeat(4, 100px);
+
+  /* 특정 row의 수의 크기를 지정함 */
+  grid-template-rows: repeat(4, 100px);
+
+  /* row의 default size를 지정함 */
+  grid-auto-rows: 100px;
+}
+```
+
+- 특정 row의 수의 크기를 지정하지 않는다면 grid-auto-rows의 설정값으로 모든 row들이 자동화된다.
+
+- 만약 grid-auto-rows를 주지 않고 4개의 row만 크기를 지정했는데 row가 5개 이상이라면, 나머지 row들은 사이즈가 없는 div로 생성되어 4열로 세워진다.
+
+  <img alt= "no grid-auto-rows " src="./images/no_grid_auto_rows.png">
+
+<br>
+
+여분의 데이터를 새로운 row를 생성하는 대신 새로운 column을 만들고 싶다면 <b>grid-auto-flow</b>를 사용한다.
+
+```css
+.grid {
+  display: grid;
+  gap: 5px;
+  height: 50vh;
+
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+
+  grid-auto-flow: column;
+                  row; /* 기본값 */
+
+  grid-auto-columns: 100px;
+}
+```
+
+- gird-auto-flow를 사용하면 지정된 row의 수 보다 더 많은 div가 있을 때마다 지정된 row에(예제에서는 4행) 맞춰 사이즈가 없는 column을 만든다.
+
+- column의 기본 크기를 지정하고 싶다면 grid-auto-columnns를 사용한다.
+
+- 여기서 주의할 것은 div의 순서가 column을 따라 좌에서 우로 가는 것이 아니라 위에서 아래로 향한다는 것이다.
+
+  <img alt= "order of grid-auto-flow: columns " src="./images/grid-auto-flow.png">
+
+- 마치 flexbox의 direction이 column이 되는 것과 같다.
+
+<br>
