@@ -480,3 +480,193 @@ server에서 데이터를 가져와서 나타낼 경우, grid-template의 column
 - 마치 flexbox의 direction이 column이 되는 것과 같다.
 
 <br>
+
+## minmax
+
+minmax는 element를 얼마나 작게 혹은 크게 만들 수 있는지 지정한다.
+
+minmax는 element가 가능한 엄청 크길 원하는데 동시에 엄청 작아지지 않아야할 때 유용하게 쓰인다.
+
+```css
+minmax(최소크기, 최대크기)
+```
+
+```css
+.grid {
+  display: grid;
+  gap: 5px;
+  height: 50vh;
+
+  grid-template-columns: repeat(10, minmax(100px, 1fr);
+  grid-template-rows: repeat(4, 100px);
+
+}
+```
+
+## auto-fill, auto-fit
+
+auto-fill과 auto-fit은 repeat 함수에서만 사용할 수 있다.
+
+```html
+<html>
+  <head>
+    <title>CSS Masterclass</title>
+  </head>
+  <body>
+    auto-fill
+    <div class="grid">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+    auto-fit
+    <div class="grid">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>
+```
+
+```css
+.grid {
+  color: white;
+  display: grid;
+  gap: 5px;
+  grid-auto-rows: 100px;
+  margin-bottom: 30px;
+}
+
+.item:nth-child(odd) {
+  background-color: #2ecc71;
+}
+.item:nth-child(even) {
+  background-color: #3498db;
+}
+
+.grid:first-child {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid:last-child {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+```
+
+- 얼마나 많은 element가 있을지 모르는 경우가 많기 때문에 특정한 수를 repeat함수에 넣어서 디자인 하는 경우는 드물다.
+
+- <b>auto-fill은 우리가 준 사이즈 안에서 column을 만들어 주는 일을 한다.<br>coulmn이 비어있더라도 해당 row를 채운다고 이해하면 된다.</b>
+  <img alt= "auto-fill" src="./images/auto-fill.gif">
+
+- <b>auto-fit은 row에 딱 맞게 element를 늘린다.</b>
+  <img alt= "auto-fit" src="./images/auto-fit.gif">
+
+- auto-fill은 보다 정확한 사이즈를 만들고, auto-fit은 좀 더 유동적인 사이즈를 만든다. <br>
+
+  (6번째 아이템을 추가했을 때)
+  <img alt= "diffrence of auto-fit and auto-fill" src="./images/auto-fill_auto-fit.gif">
+
+<br>
+
+## min-content, max content
+
+```html
+<html>
+  <head>
+    <title>CSS Masterclass</title>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item">This is a very long text</div>
+      <div class="item">This is a very long text</div>
+    </div>
+  </body>
+</html>
+```
+
+```css
+.grid {
+  color: white;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: max-content min-content;
+  grid-auto-rows: 100px;
+  margin-bottom: 30px;
+}
+
+.item:nth-child(odd) {
+  background-color: #2ecc71;
+}
+.item:nth-child(even) {
+  background-color: #3498db;
+}
+```
+
+- content를 담는 box가 있다고 한다면, <b>min-content</b>는 content가 작아질 수 있을 만큼 작아지는 것이다.(단어 단위로 잘려서 줄바꿈)
+
+- <b>max-content</b>는 content는 content가 필요한 만큼 크게 만드는 것이다.
+
+  <img alt= "diffrence of auto-fit and auto-fill" src="./images/min-content_max-content.png">
+
+## minmax, min-content, max-content 결합
+
+minmax, min-content, max-content를 결합해서 사용하면 효율적인 반응형 디자인이 가능하다.
+
+<br>
+
+```html
+<html>
+  <head>
+    <title>CSS Masterclass</title>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item">This is a very long text</div>
+      <div class="item">This is a very longer longer long text</div>
+      <div class="item">This is a text</div>
+      <div class="item">
+        Not long at all, or maybe, who knows? Maybe you know, love you.
+      </div>
+    </div>
+  </body>
+</html>
+```
+
+```css
+.grid {
+  color: white;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(5, minmax(max-content, 1fr));
+  grid-auto-rows: 100px;
+  margin-bottom: 30px;
+}
+
+.item:nth-child(odd) {
+  background-color: #2ecc71;
+}
+.item:nth-child(even) {
+  background-color: #3498db;
+}
+```
+
+<img alt= "Combination of minmax and max-content." src="./images/minmax-content.gif">
+
+- item의 max-content가 최소값이기 때문에 content의 모든 내용이 보일 수 있도록 element 크기가 변화했다.
+
+- element의 최대값은 1fr이다.
+
+- 세 번째 item은 1fr 때문에 content 끝에 빈공간이 생긴다.
+
+- 화면을 줄일수록 fr이 줄어들다가 max-content가 된다.
+
+이렇게 box를 content 사이즈에 따라서 만들 수 있다.
+
+<br>
+<hr>
+<a href="https://nomadcoders.co/css-layout-masterclass">노마드코더 CSS Layout 마스터클래스</a> - grid 로 공부한 내용입니다.
