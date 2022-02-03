@@ -416,6 +416,17 @@ server에서 데이터를 가져와서 나타낼 경우, grid-template의 column
 
 <b>grid-auto-rows는 만약 더 많은 content가 있다면 따로 rows를 지정해 주지 않아도 default value를 자동으로 줘서 row를 생성한다.</b>
 
+```html
+<html>
+  <head>
+    <title>CSS Masterclass</title>
+  </head>
+  <body>
+    <div class="grid">.item*50>{$}</div>
+  </body>
+</html>
+```
+
 ```css
 .grid {
   display: grid;
@@ -460,7 +471,7 @@ server에서 데이터를 가져와서 나타낼 경우, grid-template의 column
 
 - gird-auto-flow를 사용하면 지정된 row의 수 보다 더 많은 div가 있을 때마다 지정된 row에(예제에서는 4행) 맞춰 사이즈가 없는 column을 만든다.
 
-- column의 기본 크기를 지정하고 싶다면 grid-auto-columnns를 사용한다.
+- column의 기본 크기를 지정하고 싶다면 grid-auto-columns를 사용한다.
 
 - 여기서 주의할 것은 div의 순서가 column을 따라 좌에서 우로 가는 것이 아니라 위에서 아래로 향한다는 것이다.
 
