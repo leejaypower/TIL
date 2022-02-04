@@ -68,3 +68,7 @@
   - [연결 리스트](https://github.com/leejaypower/TIL/blob/main/CS50/자료구조/연결리스트.md)
   - [해시 테이블, 트라이](https://github.com/leejaypower/TIL/blob/main/CS50/자료구조/해시테이블,트라이.md)
   - [스택, 큐, 딕셔너리](https://github.com/leejaypower/TIL/blob/main/CS50/자료구조/스택큐,딕셔너리.md)
+
+### Issues
+
+- [SCSS set up issue](https://github.com/leejaypower/TIL/blob/main/Issue/scss_set_up_issue.md)
