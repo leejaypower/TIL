@@ -20,8 +20,40 @@ ExecutionPolicy가 Unrestricted 인 상태로 바꾸는 것이다.</b><br>
 
 <br>
 
+그러나... css파일을 scss와 다른 경로에 놓았으나 <u>watch를 걸면 scss와 같은 위치에 compile된 css 파일이 새로 생성되었다.</u>
+
+강의처럼 <u>지정한 경로에 css파일이 위치하길 원했기 때문에</u> <br>
+다시 처음부터 npm install을 하고 <b>npm run dev</b>로 실행하려고 하니 error가 발생했다.
+
+이를 해결하기 위해 구글링을 했고, 스택오버플로우에서 답을 얻었다.
+
+아마 scss 컴파일을 위해 명령어 여러가지를 시도하다가 꼬인걸까? <br>
+npm의 캐시와 노드 모듈들, 그리고 package-lock.json을 삭제한 후 다시 npm을 설치해야 한다.
+
+```
+$ npm cache clean --force
+$ rm -rf node_modules package-lock.json
+$ npm install
+```
+
+을 차례차례 실행하면 되는데, 2번째 단계에서 명령어가 듣지 않았다.
+
+```
+rm -r "node_modules"
+```
+
+이렇게 입력하였더니 정상적으로 삭제되었다.
+아마 윈도우 환경이기 때문에 명령어가 달라서 그런 것 같은데
+잘 모르겠다.. 후에 알아보도록 하겠다.
+
+이후 npm run dev 명령어를 입력하니 정상적으로 원하는 경로로 compile되었다!!
+
+<br>
+
 ### 느낀점
 
 <i>npm이나 node.js 공부는 CSS 전처리기 공부와 , JS 공부를 한 후 시작하려고 했는데 갑자기 npm, yarn 등의 개념이 튀어나와 당황스러웠다...<br> Scss가 css로 compile 및 build되어야 하고, 그를 위한 과정이 있다는 것을 미처 고려하지 못했다.<br>
 일단 Scss 과정은 멈추지 않고 진행하며, 이해가 필요한 경우 그때 그때 구글링을 하면서 공부하고, 이후 더 깊게 공부해야겠다.
 </i>
+
+<br>
