@@ -138,3 +138,79 @@ Nesting은 타겟하는 element를 더 정확하게 해줄 수 있다.
     }
   }
   ```
+
+<br>
+
+## Mixin
+
+<b>Mixin은 scss functionality를 재사용할 수 있도록 해준다.</b>
+
+- mixins를 사용하려면 mixins.scss 파일을 생성해 작성한다.
+
+```scss
+@mixin title {
+  color: purple;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+```
+
+- scss 파일에 import한다.
+
+```scss
+@import "_mixins";
+
+h1 {
+  @include title();
+}
+```
+
+- <i>@include</i>를 앞에 붙이고 mixin name을 붙이면 mixin의 스타일이 h1에 들어가게 된다.
+
+- 마치 function처럼 보인다.
+
+<br>
+
+```scss
+@mixin title($color) {
+  color: $color;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+```
+
+- 이처럼 mixin에 variable을 넣어서 사용할 수도 있다!
+
+<br>
+
+SCSS에서는 <b>if와 else</b>를 사용하여 mixin을 활용할 수도 있다.
+
+```scss
+/* scss 파일 */
+a {
+  margin-botton: 10px;
+  &:nth-child(odd) {
+    @include title("odd");
+  }
+  $:nth-child(even) {
+    @include title("even");
+  }
+}
+```
+
+- scss에서 mixin을 include하고 문자를 인자로 주었다.
+
+```scss
+/* mixin 파일 */
+@mixin title($word) {
+  @if $word == "odd" {
+    color: blue;
+  } @else {
+    color: red;
+  }
+}
+```
+
+- mixin은 그 문자열을 <b>if로 확인해서 선택적인 스타일</b>을 줄 수 있다.
+
+- 즉 scss에서 어떤 종류의 argument를 mixin에 보내서 css 결과값을 바꾸는 것이 가능하다.
