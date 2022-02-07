@@ -214,3 +214,51 @@ a {
 - mixin은 그 문자열을 <b>if로 확인해서 선택적인 스타일</b>을 줄 수 있다.
 
 - 즉 SCSS에서는 어떤 종류의 argument를 mixin에 보내서 css 결과값을 바꾸는 것이 가능하다.
+
+<br>
+
+## Extends
+
+mixin이 상황에 따라 다르게 스타일을 줄 때 사용했다면,
+<b>extend는 코드를 확장(extend)하거나 재사용하고 싶을 때 사용한다.</b>
+
+- extends를 작성할 파일을 생성하여 %을 붙여 작성하면 된다.
+
+```scss
+// extends.scss
+
+%button {
+  border-radius: 7px;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background-color: gainsboro;
+  color: peru;
+  font-weight: 500;
+}
+```
+
+- 이 button의 style을 재사용한다.
+- extend는 page에서 분리해야하는 element들(button, card, navigation 등)이 많을 때 유용하게 쓰일 수 있다.
+
+```scss
+// styles.scss
+
+@import "_extends.scss";
+
+a {
+  @extend %button;
+  text-decoration: none;
+}
+
+button {
+  @extend %button;
+  border: none;
+```
+
+- extends 파일을 import하고, <i>@extend</i>를 앞에 적고 <i>%(extend이름)</i> 을 붙이면 된다.
+- 이처럼 extend을 이용해 a와 button은 여러 property를 한번에 공유하면서도 서로 다른 property를 추가로 가질 수 있다.
+
+<br>
+<hr>
+<a href="https://nomadcoders.co/css-layout-masterclass">노마드코더 CSS Layout 마스터클래스</a> - SCSS 로 공부한 내용입니다.
