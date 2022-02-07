@@ -15,7 +15,7 @@
   새로운 코드를 오래된 코드로 바꾸거나, Sass나 Scss를 CSS문법으로 바꿔준다.
 
 - scss로 작업하게 되면, 실수가 있다면 console에 에러를 알려준다.
-- index.htm 파일에서는 css를 링크해주어야 한다.
+- index.html 파일에서는 css를 링크해주어야 한다.
   <br>browser은 scss를 이해하지 못하기 때문이다.
 
   <br>
