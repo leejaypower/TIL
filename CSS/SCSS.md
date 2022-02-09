@@ -183,7 +183,7 @@ h1 {
 
 <br>
 
-SCSS에서는 <b>if와 else</b>를 사용하여 mixin을 활용할 수도 있다.
+SCSS에서는 <b>if와 else, else if</b>를 사용하여 mixin을 활용할 수도 있다.
 
 ```scss
 /* scss 파일 */
@@ -213,7 +213,88 @@ a {
 
 - mixin은 그 문자열을 <b>if로 확인해서 선택적인 스타일</b>을 줄 수 있다.
 
-- 즉 SCSS에서는 어떤 종류의 argument를 mixin에 보내서 css 결과값을 바꾸는 것이 가능하다.
+- <b>즉 SCSS에서는 어떤 종류의 argument를 mixin에 보내서 css 결과값을 바꾸는 것이 가능하다.</b>
+
+<br>
+<br>
+
+<b>@content</b> 를 사용하면 mixin responsive를 include한 a태그의 style이 mixin responsive의 style이 될 수 있다.
+
+```scss
+// mixin.scss
+@mixin responsive {
+  @content;
+}
+```
+
+```scss
+a {
+  @include responsive {
+    text-decoration: none;
+  }
+}
+```
+
+<br>
+<br>
+
+mixin을 이용하면 반응형 웹도 쉽게 설계할 수 있다.<br>
+다음은 간단히 반응형 디자인을 시험해본 예제이다.
+
+```scss
+// variables.scss
+
+$minIphone: 576px;
+$maxIphone: 768px;
+$minTablet: 768px;
+$maxTablet: 992px;
+```
+
+```scss
+// mixin.scss
+
+@mixin responsive($device) {
+  @if $device == "iphone" {
+    @media screen and (min-width: $minIphone) and (max-width: $maxIphone) {
+      @content;
+    }
+  } @else if $device == "tablet" {
+    @media screen and (min-width: $minTablet) and (max-width: $maxTablet) {
+      @content;
+    }
+  } @else if $device == "iphone-l" {
+    @media screen and (max-width: $minIphone) and (max-width: $maxIphone) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $device == "ipad-l" {
+    @media screen and (max-width: $minIphone) and (max-width: $maxIphone) and (orientation: landscape) {
+      @content;
+    }
+  }
+}
+```
+
+```scss
+// styles.scss
+
+@import "_variables";
+@import "_mixins";
+
+h1 {
+  color: red;
+  @include responsive("iphone") {
+    color: yellow;
+  }
+  @include responsive("iphone-l") {
+    font-size: 60px;
+  }
+  @include responsive("tablet") {
+    color: green;
+  }
+}
+```
+
+<image alt="mixin responsive function" src="./images/mixin responsive.gif">
 
 <br>
 
@@ -258,6 +339,8 @@ button {
 
 - extends 파일을 import하고, <i>@extend</i>를 앞에 적고 <i>%(extend이름)</i> 을 붙이면 된다.
 - 이처럼 extend을 이용해 a와 button은 여러 property를 한번에 공유하면서도 서로 다른 property를 추가로 가질 수 있다.
+
+- extend는 CSS코드를 재사용할 때 유용하지만 mixin처럼 어떤 정보를 인자로 넘겨서 function처럼 사용할 수는 없다.
 
 <br>
 <hr>
