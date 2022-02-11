@@ -27,7 +27,7 @@
 
 ### Javascript
 
--
+- [aync and defer](https://github.com/leejaypower/TIL/blob/main/JavaScript/aync_and_defer.md)
 
 ### CS50 2019
 
