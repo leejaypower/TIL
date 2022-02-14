@@ -27,7 +27,8 @@
 
 ### Javascript
 
-- [async and defer](https://github.com/leejaypower/TIL/blob/main/JavaScript/async_and_defer.md)
+- [async와 defer](https://github.com/leejaypower/TIL/blob/main/JavaScript/async_and_defer.md)
+- [변수와 스코프](https://github.com/leejaypower/TIL/blob/main/JavaScript/variable_and_scope.md)
 
 ### CS50 2019
 
