@@ -30,6 +30,7 @@
 - [async와 defer](https://github.com/leejaypower/TIL/blob/main/JavaScript/async_and_defer.md)
 - [변수와 스코프](https://github.com/leejaypower/TIL/blob/main/JavaScript/variable_and_scope.md)
 - [데이터 타입](https://github.com/leejaypower/TIL/blob/main/JavaScript/datatype.md)
+- [연산자](https://github.com/leejaypower/TIL/blob/main/JavaScript/operator.md)
 
 ### CS50 2019
 
