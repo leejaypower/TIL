@@ -97,7 +97,7 @@ console.log(user1.age);
 
 <br>
 
-### Fields (public, private)
+### fields (public, private)
 
 ```javascript
 class Experiment {
@@ -334,3 +334,7 @@ console.log(mixed.size); // big
 ```
 
 - 주의할 점은 assign은 복사하고자하는 프로퍼티의 값이 중복될 경우, 뒤의 값을 덮어씌운다.
+
+<br>
+<hr>
+<a href="https://www.youtube.com/watch?v=_DLhUBWsRtw&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=6">드림코딩 엘리 자바스크립트 강의</a> 로 공부한 내용입니다.
