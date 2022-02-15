@@ -31,6 +31,7 @@
 - [변수와 스코프](https://github.com/leejaypower/TIL/blob/main/JavaScript/variable_and_scope.md)
 - [데이터 타입](https://github.com/leejaypower/TIL/blob/main/JavaScript/datatype.md)
 - [연산자](https://github.com/leejaypower/TIL/blob/main/JavaScript/operator.md)
+- [함수](https://github.com/leejaypower/TIL/blob/main/JavaScript/function.md)
 
 ### CS50 2019
 
