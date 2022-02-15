@@ -32,6 +32,7 @@
 - [데이터 타입](https://github.com/leejaypower/TIL/blob/main/JavaScript/datatype.md)
 - [연산자](https://github.com/leejaypower/TIL/blob/main/JavaScript/operator.md)
 - [함수](https://github.com/leejaypower/TIL/blob/main/JavaScript/function.md)
+- [class와 object](https://github.com/leejaypower/TIL/blob/main/JavaScript/class_and_object.md)
 
 ### CS50 2019
 
