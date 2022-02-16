@@ -75,69 +75,97 @@ array.shift() : 앞에서 삭제
 - <b>array.join(구분자): 배열에 있는 모든 아이템을 구분자로 나눠서 string으로 반환</b> <br>
   구분자를 넣지않으면 기본값으로 콤마가 들어감.
 
+  <br>
+
 - <b>string.split(구분자, 리턴받을 사이즈 지정):
-  String을 배열로 반환</b>
+  String을 배열로 반환</b><br>
+  limit을 정하지 않을 경우 구분자로 구분된 모든 아이템이 반환된다.
+
+<br>
 
 - <b>array.reverse</b>: 배열안 item의 순서를 거꾸로 만들어 반환
 
-- <b>array.slice(start인덱스, end인덱스):
-  배열의 특정한 부분을 "새로운 배열"로 반환 -> splice와의 차이점</b>
-  <br>end 인덱스에 해당하는 아이템은 배제된다는 것을 주의! 즉, 마지막 인덱스전까지의 아이템까지 반환한다.
+<br>
 
-- <b>array.find</b>: 배열에 있는 모든 요소가 순차적으로 호출되는데, 반환이 true라면 바로 find 메소드가 멈추고
+- <b>array.slice(start인덱스, end인덱스):
+  배열의 특정한 부분을 "<i>새로운 배열</i> "로 반환 -> splice와의 차이점!</b><br>
+  또한 end 인덱스에 해당하는 아이템은 배제된다는 것을 주의! 즉, 마지막 인덱스전까지의 아이템까지 반환한다.
+
+  <br>
+
+- <b>array.find</b>: 배열에 있는 모든 요소에 콜백함수가 순차적으로 호출되는데, boolean값을 반환해야한다.<br>
+  콜백함수 반환값이 true라면 바로 find 메소드가 멈추고
   "<i>처음으로 true가 된 요소</i>" 를 반환하게 된다.
 
   ```javascript
   array.find(function (item, index) {
-    return item.요소 + 조건;
+    return item.property === 0;
   });
 
   // 혹은
-  array.find((item) => item.요소 + 조건);
+  array.find((item) => item.property === 0;
   ```
 
-- <b>array.filter</b>: 조건에 맞는 요소만 받아올 때 사용
+  <br>
+
+- <b>array.filter</b>: 조건에 맞는 요소만 받아서 새로운 배열을 만든다.
 
   ```javascript
-  array.filter((item) => item.요소 + 조건);
+  array.filter((item) => item.property === 0);
   ```
 
-- <b>array.map</b>: 배열안에 있는 모든 요소들을 주어진 콜백함수(원하는 함수)를 거쳐서 다른 값으로 매핑되어 반환된다.
+  <br>
+
+- <b>array.map</b>: 배열안에 있는 모든 요소들이 주어진 콜백함수(원하는 함수)를 거쳐서 같은 인덱스에 다른값으로 매핑되고 새로운 배열로 반환된다.<br>
+  배열 속 요소를 원하는 함수를 이용해서 다른 방식의 데이터를 만들고 싶을 때 사용된다.
 
   ```javascript
-  array.map((item) => item.요소);
+  array.map((item) => item.property * 2);
   ```
+
+  <br>
 
 - <b>array.some</b>: 조건에 맞는 item의 존재 여부를 boolean값으로 반환
 
   ```javascript
-  array.some((item) => item.요소 + 조건);
+  array.some((item) => item.property < 50);
   ```
 
 - <b>array.every</b>: <u>모든 요소들이</u> 조건에 맞으면 true, 아니면 false
 
-- <b>array.reduce</b>: 배열에 있는 값을 누적해서 사용해야 할 때 사용
+<br>
+
+- <b>array.reduce</b>: 우리가 원하는 시작점부터 모든 배열을 돌면서 어떤 값을 누적할 때 사용
 
   ```javascript
-  array.reduce(prev, curr) => {
-    return curr;
-  };
+  array.reduce((prev, curr) => {
+    console.log(prev);
+    console.log(curr);
+    return prev + curr.property;
+  }, 0);
+  // prev 는 이전 값(previous), curr(current)는 현재 값이다.
+
+  // arrow fucntion
+  array.reduce((prev, curr) => prev + curr.property, 0);
   ```
 
-  curr은 배열안의 요소가 하나씩 전달되고, prev는 return한 값이 들어가서
-  다음에 curr가 호출될때 prev의 그 다음 요소가 나오게끔 연결된다.<br>
-  예를들어 prev + curr을 return하게 되면, 전체 요소의 값이 누적해서 더해진 값이 출력되게 된다.
+  curr에 배열 속 요소가 처음부터 하나씩 전달된다. 그 다음에 호출될때 prev에 return한 값이 들어간다.<br>
+  그렇게 계속 호출될 때마다 prev에는 return된 curr의 값이 차례대로 들어가게 된다.<br> console에 prev와 curr을 출력해보면 요소들이 어떤 식으로 이어지는지 알 수 있다.<br>
+  따라서 처음 값(initial value)으로 0을 주고, prev + curr을 return하게 되면 전체 요소의 값이 누적해서 더해진 값이 출력되게 된다.<br>
+  reduceRight도 있는데, 배열 제일 뒤부터 누적한다.
 
-- array.sort: 정렬할 때 쓰이는 API
+  <br>
+
+- <b>array.sort</b>: 정렬할 때 쓰이는 API
 
   ```javascript
   sort((a, b) => a - b);
   ```
 
-  b가 a보다 클 경우 -의 값으로 반환<br>첫번째 값(이전값)이 두번째 값(현재값)보다 작다고 간주되어 정렬됨.<br>
-  즉, 오름차순 정렬.
+  b가 a보다 클 경우 -의 값으로 반환<br>
+  첫번째 값(이전값)이 두번째 값(현재값)보다 작다고 간주되어 정렬된다.<br>
+  즉, 오름차순으로 정렬된다.
 
 <br>
 <hr>
 <a href="https://www.youtube.com/watch?v=yOdAVDuHUKQ&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=8">드림코딩 엘리 자바스크립트 강의</a> 로 공부한 내용입니다.
-```
