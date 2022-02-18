@@ -36,6 +36,7 @@
 - [배열](https://github.com/leejaypower/TIL/blob/main/JavaScript/array.md)
 - [JSON](https://github.com/leejaypower/TIL/blob/main/JavaScript/json.md)
 - [callback](https://github.com/leejaypower/TIL/blob/main/JavaScript/callback.md)
+- [Promise](https://github.com/leejaypower/TIL/blob/main/JavaScript/promise.md)
 
 ### CS50 2019
 
