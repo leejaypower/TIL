@@ -127,7 +127,51 @@ userStorage.loginUser(
 
 <br>
 
-[promise]()와 [aync/await]()를 통해서 비동기 코드를 깔끔하게 작성할 수 있고, 병렬적, 효율적으로 네트워크 통신을 해결할 수 있다.
+[promise](https://github.com/leejaypower/TIL/blob/main/JavaScript/promise.md)와 [aync/await]()를 통해서 비동기 코드를 깔끔하게 작성할 수 있고, 병렬적, 효율적으로 네트워크 통신을 해결할 수 있다.
+
+```javascript
+// 콜백지옥을 promise로 바꾸기
+class UserStorage {
+  loginUser(id, password) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (
+          (id === "jay" && password === "1234") ||
+          (id === "coder" && password === "5678")
+        ) {
+          resolve(id);
+        } else {
+          reject(new Error("not found"));
+        }
+      }, 2000);
+    });
+  }
+
+  // 사용자의 역할을 따로 네트워크 요청을 통해 받아와야하는 상황 가정
+  getRoles(user) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+      if (user === "jay") {
+        onSuccess({ name: jay, role: "admin" });
+      } else {
+        onError(new Error("no access"));
+      }
+     }, 1000);
+   });
+  }
+}
+
+const userStorage = new UserStorage();
+const id = prompt("enter your id");
+const password = prompt("enter your password");
+
+userStorage
+.loginUser(id, password)
+.then(userStorage.getRoles)
+// .then(user => userStorage.getRoles)
+.then(user => alert(`Hello ${user.name}, you have a ${user.role} role`));
+.catch(console.log);
+```
 
 <br>
 <hr>
