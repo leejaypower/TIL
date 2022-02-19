@@ -37,6 +37,7 @@
 - [JSON](https://github.com/leejaypower/TIL/blob/main/JavaScript/json.md)
 - [callback](https://github.com/leejaypower/TIL/blob/main/JavaScript/callback.md)
 - [Promise](https://github.com/leejaypower/TIL/blob/main/JavaScript/promise.md)
+- [async와 awiat](https://github.com/leejaypower/TIL/blob/main/JavaScript/async_await.md)
 
 ### CS50 2019
 
