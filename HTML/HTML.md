@@ -57,3 +57,17 @@ HTML5은 공식적으로 폐기된 상태이며, 이러한 지칭은 더이상 �
 - HTML을 잘 안다는 것은 브라우저가 어떤 방식으로 동작하는지를 이해하는 것과 같다.
 
 - 또한 브라우저 뿐만 아니라 검색엔진, 크롤러, 콘텐츠의 표현방식, 접근성 등에 대한 이해도가 있다는 것을 의미한다.
+
+<br>
+
+## HTML Living Standard
+
+HTML은 꾸준히 업데이트가 진행되고 있다.
+
+https://html.spec.whatwg.org/multipage/
+
+HTML 표준 문서를 보면 요소에 대한 세부적인 내용을 파악함과 동시에<br> 어느 브라우저와 검색엔진에서 요소가 지원되는 지도 파악할 수 있다.
+
+<br>
+<hr>
+<a href="https://www.inflearn.com/course/html-%ED%91%9C%EC%A4%80-%EA%B8%B0%EC%B4%88">인프런 조은님의 HTML 강의</a> 로 공부한 내용입니다.
