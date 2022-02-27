@@ -64,9 +64,42 @@ HTML5은 공식적으로 폐기된 상태이며, 이러한 지칭은 더이상 �
 
 HTML은 꾸준히 업데이트가 진행되고 있다.
 
-https://html.spec.whatwg.org/multipage/
+<a href="https://html.spec.whatwg.org/multipage/">HTML 표준 문서</a>를 보면 요소에 대한 세부적인 내용을 파악함과 동시에<br> 어느 브라우저와 검색엔진에서 요소가 지원되는 지도 파악할 수 있다.
 
-HTML 표준 문서를 보면 요소에 대한 세부적인 내용을 파악함과 동시에<br> 어느 브라우저와 검색엔진에서 요소가 지원되는 지도 파악할 수 있다.
+<br>
+
+## 알아두면 유용한 HTML 관련 사이트들
+
+<a href="https://validator.w3.org">HTML Validator</a>
+
+- 올바른 HTML을 작성했는지 체크하고 싶을 때 사용할 수 있는 사이트.
+- 작성한 HTML의 문법이 잘못되었는지 체크해주고, 좋은 방향으로 문서를 바꿀 수 있게 제안한다.
+
+<a href="https://caniuse.com">Caniuse</a>
+
+- 브라우저 벤더사들이 직접 업로드
+- 현재 사용할 수 있는 요소와 사용 불가능한 요소를 가늠할 때
+- 버전별로 지원 범위를 알려주기 때문에 유용하다.
+
+<a href="https://developer.mozilla.org/ko/">MDN</a>
+
+- Mozila에서 운영하는 기술 문서
+- Chrome, Edge, Firefox 등 모든 브라우저 벤더들이 오프소스로 참여하고 있다.
+- HTML, CSS, Javascript 관련 기술을 가장 정확하게 제공하는 사이트
+
+<a href="https://css-tricks.com/">CSS-Tricks</a>
+
+- CSS 정보 공유 사이트
+- HTML, CSS를 폭 넓고 깊이 있게 다루는 사이트
+
+<a href="https://whatwg.org">WHATWG</a>
+
+- 표준화 기구로서 HTML 스펙을 정의하고 공표
+
+<a href="https://alistapart.com">A List Apart</a>
+
+- 웹 관련 전반적인 기술과 전략을 다루는 사이트
+- A Book Apart(Responsive web Design, Cross-cultural Design)
 
 <br>
 <hr>
