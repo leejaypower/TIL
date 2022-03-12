@@ -127,7 +127,7 @@ flex-direction: <b>column</b>의 경우, <b>main axis는 vertical(세로축)</b>
 
 <br>
 
-### order
+## order
 
 - <b>order</b>는 box에게 순서를 변경하라고 할 수 있다.<br>
 - order의 기본값은 0이다.
