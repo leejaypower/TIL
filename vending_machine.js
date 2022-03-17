@@ -15,8 +15,8 @@ const drinks = [coke, water, coffee];
 
 // 자판기 클래스
 class VendingMachine {
-  constructor(change, payment) {
-    this.change = change; // 자판기가 사용자에게 받은 금액을 저장하는 용도
+  constructor(money, payment) {
+    this.money = money; // 자판기가 사용자에게 받은 금액을 저장하는 용도
     this.payment = payment; // 사용자가 결제할 수단을 저장하는 용도
   }
 
@@ -29,9 +29,9 @@ class VendingMachine {
       this.returnUnavailable(cash);
     } else {
       // 정상적인 현금 투입
-      this.change += cash; // 투입한 금액은 자판기에 잔액으로 누적
-      console.log(`투입 금액: ${this.change}원`);
-      this.showAvailableDrinks(this.change);
+      this.money += cash; // 투입한 금액은 자판기에 잔액으로 누적
+      console.log(`투입 금액: ${this.money}원`);
+      this.showAvailableDrinks();
     }
   }
 
@@ -49,15 +49,15 @@ class VendingMachine {
     promise
       .then((creditData) => {
         console.log(`${creditData} 확인`);
-        this.showAvailableDrinks("card");
+        this.showAvailableDrinks();
       })
       .catch((error) => {
         console.log(`카드 인식 오류: ${error} 발생`);
-        this.payment = null; // 결제수단 초기화
+        this.payment = ""; // 결제수단 초기화
       });
   }
 
-  showAvailableDrinks(insertedCash) {
+  showAvailableDrinks() {
     // 구매가능한 음료를 보여주는 함수
     const soldOut = drinks.filter((drink) => drink.stock == 0); // 매진된 음료리스트
     const inStock = drinks.filter((drink) => drink.stock > 0); // 재고가 있는 음료리스트
@@ -75,7 +75,7 @@ class VendingMachine {
     } else {
       // 현금 결제시
       const availableDrinks = inStock.filter(
-        (drink) => drink.price <= insertedCash
+        (drink) => drink.price <= this.money
       );
       if (availableDrinks.length > 0) {
         console.log(`구매 가능한 음료수는 다음과 같습니다.`);
@@ -97,8 +97,8 @@ class VendingMachine {
   selectDrink(drink) {
     if (this.payment == "cash") {
       // 현금 결제
-      if (drink.price < this.change) {
-        const change = this.change - drink.price;
+      if (drink.price < this.money) {
+        const change = this.money - drink.price;
         this.returnChange(change);
       }
       console.log(`${drink.name} 구매가 완료되었습니다.`);
@@ -122,7 +122,7 @@ class VendingMachine {
         })
         .catch((error) => {
           console.log(`결제 오류: ${error}`);
-          this.payment = null; // 결제수단 초기화
+          this.payment = ""; // 결제수단 초기화
         });
     }
   }
@@ -130,7 +130,7 @@ class VendingMachine {
   // 돈을 반환하는 함수
   returnChange(returnCash) {
     console.log(`${returnCash}원이 반환되었습니다`);
-    this.change = 0;
+    this.money = 0;
     this.payment = "";
   }
 }
