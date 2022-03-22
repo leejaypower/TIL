@@ -55,8 +55,14 @@
 - [HTTP](https://github.com/leejaypower/TIL/blob/main/HTTP/HTTP.md)
 
   - [인터넷 네트워크](https://github.com/leejaypower/TIL/blob/main/HTTP/인터넷_네트워크.md)
+  - [HTTP 기본](https://github.com/leejaypower/TIL/blob/main/HTTP/HTTP기본.md)
+  - [HTTP 메서드](https://github.com/leejaypower/TIL/blob/main/HTTP/HTTP메서드.md)
+  - [HTTP 메서드 활용](https://github.com/leejaypower/TIL/blob/main/HTTP/HTTP메서드활용.md)
+  - [HTTP 상태코드](https://github.com/leejaypower/TIL/blob/main/HTTP/HTTP상태코드.md)
+  - [HTTP 헤더 - 일반헤더](https://github.com/leejaypower/TIL/blob/main/HTTP/HTTP일반헤더.md)
+  - [HTTP 헤더 - 캐시와 조건부 요청](https://github.com/leejaypower/TIL/blob/main/HTTP/HTTP헤더_캐시와조건부요청.md)
 
-  <br>
+<br>
 
 - CS50 2019
   - [컴퓨팅사고](https://github.com/leejaypower/TIL/blob/main/CS50/컴퓨팅사고.md)
