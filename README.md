@@ -1,17 +1,11 @@
 # 📖TIL (Today, I Learned)
 
-- 공부한 내용이나 개발경험을 정리해서 마크다운 문서로 작성합니다.<br>
-- 배운 내용들을 꺼내보기 위한 저장소입니다.
-- 기록에 부담은 갖지않되, 꾸준하려고 노력합니다.
+- 학습한 내용들을 나중에 다시 꺼내보기 위한 저장소입니다. (다른 레포에서 정리된 내용도 일부 포함)
+- 기록을 위한 기록은 하지 않도록 하고, 부담 갖지 않는 선에서 정리합니다.
+- 훗날 문서를 다시 봤을 때에도 이해하기 쉽도록 작성하려고 노력합니다.
+- 더 많은 기록이 필요한 주제는 <a href="https://growing-jay.tistory.com/">블로그</a>에 포스팅하고 있습니다.
 
 <br>
-
-## ✍ 작성규칙
-
-- 간결하고 핵심적인 문장을 사용합니다.
-- 훗날 문서를 다시 봤을 때에도 이해하기 쉽도록 작성합니다.
-- 더 많은 기록이 필요한 주제는 <a href="https://velog.io/@leejaypower">블로그</a>에 같이 포스팅합니다.
-- 출처를 명시하고 필요시 외부링크를 사용합니다.
 
 ## 📚 분류
 
@@ -51,6 +45,12 @@
 - [Promise](https://github.com/leejaypower/TIL/blob/main/JavaScript/promise.md)
 - [async와 awiat](https://github.com/leejaypower/TIL/blob/main/JavaScript/async_await.md)
 
+### Typescript
+- [아는 기본 타입도 두드려보고 건너기](https://github.com/leejaypower/play-ground/blob/main/typescript/index.ts)
+- [Typescript로 객체 지향 알아보기](https://github.com/leejaypower/play-ground/blob/main/typescript/oop.ts)
+
+### React
+
 ### CS
 
 - [HTTP](https://github.com/leejaypower/TIL/blob/main/HTTP/HTTP.md)
@@ -74,6 +74,3 @@
   - [메모리](https://github.com/leejaypower/TIL/blob/main/CS50/메모리.md)
   - [자료구조](https://github.com/leejaypower/TIL/blob/main/CS50/자료구조.md)
 
-### Issues
-
-- [SCSS set up issue](https://github.com/leejaypower/TIL/blob/main/Issue/scss_set_up_issue.md)
