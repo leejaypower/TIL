@@ -50,6 +50,7 @@
 - [Typescript로 객체 지향 알아보기](https://github.com/leejaypower/play-ground/blob/main/typescript/oop.ts)
 
 ### React
+- [클린코드 리액트](https://github.com/leejaypower/learn-react?tab=readme-ov-file#3-react%EB%A5%BC-%EC%9C%84%ED%95%9C-clean-code)
 
 ### CS
 
