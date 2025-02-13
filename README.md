@@ -46,8 +46,8 @@
 - [async와 awiat](https://github.com/leejaypower/TIL/blob/main/JavaScript/async_await.md)
 
 ### Typescript
-- [아는 기본 타입도 두드려보고 건너기](https://github.com/leejaypower/play-ground/blob/main/typescript/index.ts)
-- [Typescript로 객체 지향 알아보기](https://github.com/leejaypower/play-ground/blob/main/typescript/oop.ts)
+- [아는 기본 타입도 두드려보고 건너기](https://github.com/leejaypower/play-ground/blob/main/typescript/basic-type.ts)
+- [Typescript로 객체 지향 알아보기](https://github.com/leejaypower/play-ground/blob/main/typescript/index.md)
 
 ### React
 - [클린코드 리액트](https://github.com/leejaypower/learn-react?tab=readme-ov-file#3-react%EB%A5%BC-%EC%9C%84%ED%95%9C-clean-code)
