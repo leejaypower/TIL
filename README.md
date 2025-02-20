@@ -46,8 +46,10 @@
 - [async와 awiat](https://github.com/leejaypower/TIL/blob/main/JavaScript/async_await.md)
 
 ### Typescript
-- [아는 기본 타입도 두드려보고 건너기](https://github.com/leejaypower/play-ground/blob/main/typescript/type/basic-type.ts)
-- [아는 제네릭도 다시 보기](https://github.com/leejaypower/play-ground/blob/main/typescript/type/generic.ts)
+- [기본 타입](https://github.com/leejaypower/play-ground/blob/main/typescript/type/basic-type.ts)
+  - [type과 interface](https://github.com/leejaypower/play-ground/blob/main/typescript/type/type-vs-interface.ts)
+- [제네릭](https://github.com/leejaypower/play-ground/blob/main/typescript/type/generic.ts)
+- [유틸리티 타입](https://github.com/leejaypower/play-ground/blob/main/typescript/type/utility-type.ts)
 - [Typescript로 객체 지향 알아보기](https://github.com/leejaypower/play-ground/blob/main/typescript/oop/index.md)
 
 ### React
