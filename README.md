@@ -44,6 +44,9 @@
 - [callback](https://github.com/leejaypower/TIL/blob/main/JavaScript/callback.md)
 - [Promise](https://github.com/leejaypower/TIL/blob/main/JavaScript/promise.md)
 - [async와 awiat](https://github.com/leejaypower/TIL/blob/main/JavaScript/async_await.md)
+- [prototype](https://github.com/leejaypower/play-ground/blob/main/javascript/prototype.js)
+- [this](https://github.com/leejaypower/play-ground/blob/main/javascript/this.js)
+- [lexical and closure](https://github.com/leejaypower/play-ground/blob/main/javascript/lexical-closure.js)
 
 ### Typescript
 - [기본 타입](https://github.com/leejaypower/play-ground/blob/main/typescript/type/basic-type.ts)
