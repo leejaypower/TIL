@@ -58,6 +58,12 @@
 ### React
 - [클린코드 리액트](https://github.com/leejaypower/learn-react?tab=readme-ov-file#3-react%EB%A5%BC-%EC%9C%84%ED%95%9C-clean-code)
 
+### Next.js
+- [사전 렌더링](https://github.com/leejaypower/TIL/blob/main/Nextjs/pre-rendering.md)
+- [사전 페칭](https://github.com/leejaypower/TIL/blob/main/Nextjs/pre-fetching.md)
+- [데이터 페칭](https://github.com/leejaypower/TIL/blob/main/Nextjs/data-fetching.md)
+- [페이지 라우터](https://github.com/leejaypower/TIL/blob/main/Nextjs/page-router.md)
+
 ### CS
 
 - [HTTP](https://github.com/leejaypower/TIL/blob/main/HTTP/HTTP.md)
