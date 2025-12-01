@@ -47,6 +47,8 @@
 - [prototype](https://github.com/leejaypower/play-ground/blob/main/javascript/prototype.js)
 - [this](https://github.com/leejaypower/play-ground/blob/main/javascript/this.js)
 - [lexical and closure](https://github.com/leejaypower/play-ground/blob/main/javascript/lexical-closure.js)
+- [proxy](https://github.com/leejaypower/play-ground/blob/main/javascript/proxy.js)
+- [refelct](https://github.com/leejaypower/play-ground/blob/main/javascript/reflect.js)
 
 ### Typescript
 - [기본 타입](https://github.com/leejaypower/play-ground/blob/main/typescript/type/basic-type.ts)
