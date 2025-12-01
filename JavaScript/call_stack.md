@@ -40,20 +40,21 @@ a 함수 안에서 b, c 등의 함수가 실행된다면 b, c 함수가 종료�
 
 ```javascript
 const x = 'x';
+
 function c () {
-    const y = 'y';
-    console.log('c');
+  const y = 'y';
+  console.log('c');
 }
 
 function a() {
-    const x = 'x';
-    console.log('a';
-    function b() {
-        const z = 'z';
-        console.log('b');
-        c();
-    }
-    b();
+  const x = 'x';
+  console.log('a';
+  function b() {
+      const z = 'z';
+      console.log('b');
+      c();
+  }
+  b();
 }
 
 a(); // a, b, c
@@ -137,3 +138,39 @@ c(); // c;
 └─────────────────────────────┘
 
 ```
+
+## 부록 - scope chain
+함수 내에서 어떤 값에 접근이 가능하고 불가능한가? 
+콜스택에서 사용했던 위 코드를 살짝만 수정해보자.
+
+```javascript
+const x = 'x';
+
+function c () {
+  const y = 'y';
+  console.log('c');
+
+  function b() {
+    const z = 'z';
+    console.log('b');
+    c();
+  }   
+}
+
+function a() {
+  const x = 'x';
+  console.log('a';
+
+  b(); // ❗️ b is not defined 에러
+ }
+
+a(); // a, b, c
+c(); // c;
+```
+
+호출 스택에서 "호출"을 기준으로 그렸다면 "선언"을 기준으로 생각하면 된다.
+- c ⊂ anonymous (전역 global)
+- a ⊂ anonymous
+  - a는 a 내의 선언된 함수나 global만 값에 접근가능하니까 위처럼 b는 당연히 접근 불가해서 에러가 난다.
+- b ⊂ c ⊂ anonymous 
+  - 바뀔 수 없는 고정적인 범위(스코프): [lexical scope](https://github.com/leejaypower/play-ground/blob/main/javascript/lexical-closure.js)
