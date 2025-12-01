@@ -45,6 +45,7 @@
 - [Promise](https://github.com/leejaypower/TIL/blob/main/JavaScript/promise.md)
 - [async와 awiat](https://github.com/leejaypower/TIL/blob/main/JavaScript/async_await.md)
 - [prototype](https://github.com/leejaypower/play-ground/blob/main/javascript/prototype.js)
+- [call stack](https://github.com/leejaypower/play-ground/blob/main/javascript/call_stack.js)
 - [this](https://github.com/leejaypower/play-ground/blob/main/javascript/this.js)
 - [lexical and closure](https://github.com/leejaypower/play-ground/blob/main/javascript/lexical-closure.js)
 - [proxy](https://github.com/leejaypower/play-ground/blob/main/javascript/proxy.js)
