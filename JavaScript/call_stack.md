@@ -35,7 +35,8 @@
 코드는 위에서부터 아래로 실행된다.
 이 때 a 함수를 호출하면 함수의 선언부가 실행되는데, 이 때 콜스택에 a라는 함수가 쌓이게 된다.
 만약 a 함수안에서 다른 함수를 호출한다면 a 함수 위로 (다음으로) 스택에 쌓인다.
-a 함수 안에서 b, c 등의 함수가 실행된다면 b, c 함수가 종료될 때 하나씩 스택에서 제거된다. 그리고 모든 a 함수 블록 내의 모든 코드가 실행되었을 때 a까지 스택에서 비워진다.
+a 함수 안에서 b, c 등의 함수가 실행된다면 b, c 함수가 종료될 때 하나씩 스택에서 제거된다. 
+그리고 모든 a 함수 블록 내의 모든 코드가 실행되었을 때 a까지 스택에서 비워진다.
 
 
 ```javascript
@@ -140,6 +141,7 @@ c(); // c;
 ```
 
 ## 부록 - scope chain
+“어디까지 값을 찾아갈 수 있는가” 개념적 순서.
 함수 내에서 어떤 값에 접근이 가능하고 불가능한가? 
 콜스택에서 사용했던 위 코드를 살짝만 수정해보자.
 
@@ -174,3 +176,24 @@ c(); // c;
   - a는 a 내의 선언된 함수나 global만 값에 접근가능하니까 위처럼 b는 당연히 접근 불가해서 에러가 난다.
 - b ⊂ c ⊂ anonymous 
   - 바뀔 수 없는 고정적인 범위(스코프): [lexical scope](https://github.com/leejaypower/play-ground/blob/main/javascript/lexical-closure.js)
+
+```javascript
+const x = true;
+const y = false;
+
+function a() {
+  let a = 4;
+  if (x) { // 블록 스코프 (block scope)
+    let a = 3;
+    for (let i = 0; i < a; i++) { // 블록 스코프
+      console.log(i)
+    }
+  }
+  if (y) {
+    b();
+  }
+  c();
+}
+
+a();
+```
