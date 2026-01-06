@@ -30,12 +30,12 @@
 
   <br>
 
-- 콜백은 비동기에만 쓰이는 것이 아니다.<br> 즉각적으로 쓰이는 동기적 콜백과 언제 실행될지 예측할 수 없는 비동기적 콜백으로 나뉜다.
+- <b>주의할점: 콜백은 비동기에만 쓰이는 것이 아니다.</b><br> 즉각적으로 쓰이는 동기적 콜백과 언제 실행될지 예측할 수 없는 비동기적 콜백으로 나뉜다.
 
 ```javascript
-// Synchronous callback
-function printImmediately(print) {
-  print();
+// 동기 콜백(Synchronous callback)
+function calculator(callback, a, b) {
+  return callback(a, b);
 }
 // 출력하는 print 콜백함수를 전달받는다.
 
@@ -45,9 +45,9 @@ setTimeout(() => console.log("2"), 1000);
 
 console.log("3");
 
-prinImmediately(() => console.log("hello"));
+calculator(() => {a + b}, 3, 5);
 
-// Asynchronous callback
+// 비동기 콜백(Asynchronous callback)
 function printWithDelay(print, timeout) {
   setTimeout(print, timeout);
 }
@@ -55,7 +55,7 @@ function printWithDelay(print, timeout) {
 printWithDelay(() => console.log("async callback"), 2000);
 ```
 
-- 콘솔에 1, 3, hello, 2, async callback 순으로 출력된다.
+- 콘솔에 1, 3, 8, 2, async callback 순으로 출력된다.
 
 <br>
 
@@ -174,7 +174,3 @@ userStorage
 .then(user => alert(`Hello ${user.name}, you have a ${user.role} role`));
 .catch(console.log);
 ```
-
-<br>
-<hr>
-<a href="https://www.youtube.com/watch?v=s1vpVCrT8f4&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=11">드림코딩 엘리 자바스크립트 강의</a> 로 공부한 내용입니다.

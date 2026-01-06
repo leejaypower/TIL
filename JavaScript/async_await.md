@@ -1,6 +1,6 @@
 # async와 await
 
-> async와 await은 promise를 간결하고, 동기적으로 실행되는 것처럼 보이게 만든다.
+> async와 await은 promise를 간결하고, "동기적으로 실행되는 것처럼" 보이게 만든다.
 
 기존의 promise위에 간편한 api를 제공한다.
 
@@ -146,7 +146,3 @@ pickOnlyOne().then(console.log); // banana
 ```
 
 - Promise.race()는 promise 배열 중에서 가장 먼저 값을 리턴한 promise만 전달된다.
-
-<br>
-<hr>
-<a href="https://www.youtube.com/watch?v=aoQSOZfz3vQ&t=1s">드림코딩 엘리 자바스크립트 강의</a> 로 공부한 내용입니다.
