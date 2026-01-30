@@ -130,7 +130,7 @@ TIL은 이들을 연결하고 매핑하는 역할을 합니다.
 ## 📦 Archive
 
 과거에 TIL 레포지토리 내부에서 작성 및 관리했던 학습 노트들입니다.
-기술 개념과 문법 정리 중심이며, 추후 Notion 문서로 이관될 수 있습니다.
+기술 개념과 문법 정리 중심이며, 필요시 Notion 문서로 이관될 수 있습니다.
 
 - [JavaScript 기초 문법](archive/JavaScript/)
 - [HTML 요소 정리](archive/HTML/)
