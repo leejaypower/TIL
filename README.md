@@ -59,7 +59,7 @@ TIL은 이들을 연결하고 매핑하는 역할을 합니다.
 | Proxy | Proxy, Reflect, 가로채기 | 반응성 시스템 구현 (Vue 3 reactive) | [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/proxy.js) 
 | Reflect | Reflect API, 메타프로그래밍 | Proxy 핸들러 구현 | [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/reflect.js) 
 | 동기성과 블로킹 | 싱글 스레드, 메인 스레드 점유 | 무한 스크롤 성능, UI 멈춤 방지, Web Worker 활용 | [Notion](https://www.notion.so/JS-2f4664cd671680d392d2d9e9fa542d56?source=copy_link#2f8664cd6716803aaef9ffac7d4f418b) [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/sync-blocking.js) 
-| 비동기 스케줄링 | Event Loop, Task Queue, Microtask Queue | Promise vs setTimeout 실행 순서 이해 | [Notion](https://www.notion.so/2e1664cd67168023a046f4789ad7ff7a) 
+| 비동기 스케줄링 | Event Loop, Task Queue, Microtask Queue | Promise vs setTimeout 실행 순서 이해 | [Notion](https://www.notion.so/JS-2f4664cd671680d392d2d9e9fa542d56?source=copy_link#2fb664cd671680c9abbdd63d17d5a39f) [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/event-loop.js)
 | **비동기 처리** |
 | Callback | 콜백 함수, 콜백 지옥 | 레거시 API 래핑, 에러 핸들링 패턴 | [Archive](archive/JavaScript/callback.md) 
 | Promise | 체이닝, catch, finally, Promise.all | API 순차/병렬 호출, 에러 전파 | [Archive](archive/JavaScript/promise.md) 
