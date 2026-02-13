@@ -38,32 +38,61 @@ TIL은 이들을 연결하고 매핑하는 역할을 합니다.
 
 ## 🛞 JavaScript
 
-| 주제 | 핵심 개념 | 실무 연결 | 학습 자료 
+1. 기본 문법
+
+| 주제 | 핵심 개념 | 실무 연결 | 학습 자료 |
 |------|-----------|-----------|-----------|
-| **기본 문법** |
-| 변수와 스코프 | var, let, const, 블록 스코프, 호이스팅 | 변수 선언 위치 결정, 전역 오염 방지 | [Archive](archive/JavaScript/variable_and_scope.md) 
-| 데이터 타입 | 원시값 vs 참조값, null vs undefined | 불변성, 객체 복사 전략 (얕은/깊은 복사) | [Archive](archive/JavaScript/datatype.md) 
-| 연산자 | ==, ===, 논리 연산자, 단축 평가 | 조건문 간결화, null 체크 패턴 | [Archive](archive/JavaScript/operator.md) 
-| 함수 | 선언식 vs 표현식, 화살표 함수 | 호이스팅 이해, this 바인딩 | [Archive](archive/JavaScript/function.md) 
-| 배열 | map, filter, reduce, spread | 데이터 변환, 불변 업데이트 패턴 | [Archive](archive/JavaScript/array.md) 
-| 클래스와 객체 | class 문법, constructor, 프로퍼티 | 객체 지향 설계, 컴포넌트 모델링 | [Archive](archive/JavaScript/class_and_object.md) 
-| JSON | 직렬화, 역직렬화, stringify, parse | API 데이터 전송, localStorage 저장 | [Archive](archive/JavaScript/json.md) 
-| **실행 모델** |
-| 동기성과 블로킹 | 싱글 스레드, 메인 스레드 점유 | 무한 스크롤 성능, UI 멈춤 방지, Web Worker 활용 | [Notion](https://www.notion.so/JS-2f4664cd671680d392d2d9e9fa542d56?source=copy_link#2f8664cd6716803aaef9ffac7d4f418b) [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/sync-blocking.js) 
-| 비동기 스케줄링 | Event Loop, Task Queue, Microtask Queue | Promise vs setTimeout 실행 순서 이해 | [Notion](https://www.notion.so/JS-2f4664cd671680d392d2d9e9fa542d56?source=copy_link#2fb664cd671680c9abbdd63d17d5a39f) [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/event-loop.js)
-| Call Stack | 호출 스택, 스코프 체인 | 재귀 함수 디버깅, 에러 트레이싱 | [Archive](archive/JavaScript/call_stack.md) 
-| 클로저 | 렉시컬 스코프, 함수 스코프 | 모듈 패턴, 상태 은닉, 팩토리 함수 | [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/lexical-closure.js)
-| 실행 컨텍스트 | 콜 스택, 스코프 체인, this | 디버깅, 메모리 누수 추적 | [Archive](archive/JavaScript/execution_context.md) 
-| this 바인딩 | 호출 방식별 바인딩 규칙, call/apply/bind | 이벤트 핸들러, 메서드 설계, 클래스 메서드 | [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/this.js) 
-| 프로토타입 | 프로토타입 체인, \_\_proto\_\_, prototype | 상속 구현, Class vs Factory 함수 선택 | [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/prototype.js) 
-| Proxy | Proxy, Reflect, 가로채기 | 반응성 시스템 구현 (Vue 3 reactive) | [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/proxy.js) 
-| Reflect | Reflect API, 메타프로그래밍 | Proxy 핸들러 구현 | [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/reflect.js) 
-| **비동기 처리** |
-| Callback | 콜백 함수, 콜백 지옥 | 레거시 API 래핑, 에러 핸들링 패턴 | [Archive](archive/JavaScript/callback.md) 
-| Promise | 체이닝, catch, finally, Promise.all | API 순차/병렬 호출, 에러 전파 | [Archive](archive/JavaScript/promise.md) [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/promise.js)
-| async/await | 동기적 코드 작성, try-catch | 복잡한 비동기 플로우, 가독성 향상 | [Archive](archive/JavaScript/async_await.md) 
-| **브라우저 API** |
-| async & defer | script 로딩 전략 | 성능 최적화, 렌더링 블로킹 방지 | [Archive](archive/JavaScript/async_and_defer.md) 
+| 변수와 스코프 | var, let, const, 블록 스코프, 호이스팅 | 변수 선언 위치 결정, 전역 오염 방지 | [Archive](archive/JavaScript/variable_and_scope.md) |
+| 데이터 타입 | 원시값 vs 참조값, null vs undefined | 불변성, 객체 복사 전략 (얕은/깊은 복사) | [Archive](archive/JavaScript/datatype.md) |
+| 연산자 | ==, ===, 논리 연산자, 단축 평가 | 조건문 간결화, null 체크 패턴 | [Archive](archive/JavaScript/operator.md) |
+| 함수 | 선언식 vs 표현식, 화살표 함수 | 호이스팅 이해, this 바인딩 | [Archive](archive/JavaScript/function.md) |
+| 배열 | map, filter, reduce, spread | 데이터 변환, 불변 업데이트 패턴 | [Archive](archive/JavaScript/array.md) |
+| 클래스와 객체 | class 문법, constructor, 프로퍼티 | 객체 지향 설계, 컴포넌트 모델링 | [Archive](archive/JavaScript/class_and_object.md) |
+| JSON | 직렬화, 역직렬화, stringify, parse | API 데이터 전송, localStorage 저장 | [Archive](archive/JavaScript/json.md) |
+
+2. 런타임 환경 (Runtime Environment)
+
+| 주제 | 핵심 개념 | 실무 연결 | 학습 자료 |
+|------|-----------|-----------|-----------|
+| 싱글 스레드와 블로킹 | 싱글 스레드, 메인 스레드 점유, 블로킹 | 무한 스크롤 성능, UI 멈춤 방지, Web Worker 활용 | [Notion](https://www.notion.so/JS-2f4664cd671680d392d2d9e9fa542d56?source=copy_link#2f8664cd6716803aaef9ffac7d4f418b) [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/sync-blocking.js) |
+| Call Stack | 호출 스택, LIFO, Stack Frame, Stack Overflow | 재귀 함수 디버깅, 에러 스택 트레이스 읽기 | [Archive](archive/JavaScript/call_stack.md) |
+
+3. 실행 컨텍스트 (Execution Context)
+
+| 주제 | 핵심 개념 | 실무 연결 | 학습 자료 |
+|------|-----------|-----------|-----------|
+| 실행 컨텍스트 | Global/Function Context, 생성/실행 단계, 렉시컬 환경 | 디버깅, 메모리 누수 추적, 변수 접근 메커니즘 이해 | [Archive](archive/JavaScript/execution_context.md) |
+| 스코프 체인 | Outer Reference, 변수 탐색, 스코프 체인 | 변수 shadowing, 전역 오염 방지, 모듈 스코프 설계 | [실행 컨텍스트 Archive](archive/JavaScript/execution_context.md) 내 포함 |
+| 클로저 | 렉시컬 스코프, 외부 환경 참조 유지, 클로저 메모리 | 모듈 패턴, 상태 은닉, 팩토리 함수, 커링 | [Notion](https://www.notion.so/2f4664cd671680d392d2d9e9fa542d56?source=copy_link#2fe664cd6716800c9f52f085c94feb0a) [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/lexical-closure.js) |
+| this 바인딩 | 호출 방식별 바인딩 규칙, call/apply/bind, 화살표 함수 | 이벤트 핸들러, 메서드 설계, 클래스 메서드 | [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/this.js) |
+
+4. 비동기 실행 모델 (Async Runtime)
+
+| 주제 | 핵심 개념 | 실무 연결 | 학습 자료 |
+|------|-----------|-----------|-----------|
+| Event Loop | Call Stack, Task Queue, Microtask Queue, Macrotask vs Microtask 우선순위 | Promise vs setTimeout 실행 순서, 렌더링 최적화, 배치 업데이트 | [Notion](https://www.notion.so/JS-2f4664cd671680d392d2d9e9fa542d56?source=copy_link#2fb664cd671680c9abbdd63d17d5a39f) [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/event-loop.js) |
+
+4-2. 비동기 처리 패턴
+
+| 주제 | 핵심 개념 | 실무 연결 | 학습 자료 |
+|------|-----------|-----------|-----------|
+| Callback | 콜백 함수, 콜백 지옥, 에러 퍼스트 콜백 | 레거시 API 래핑, 에러 핸들링 패턴 | [Archive](archive/JavaScript/callback.md) |
+| Promise | 체이닝, catch, finally, Promise.all/race/allSettled | API 순차/병렬 호출, 에러 전파, 타임아웃 처리 | [Archive](archive/JavaScript/promise.md) [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/promise.js) |
+| async/await | 동기적 코드 작성, try-catch, Top-level await | 복잡한 비동기 플로우, 가독성 향상, 순차 처리 | [Archive](archive/JavaScript/async_await.md) [Notion](https://www.notion.so/2f4664cd671680d392d2d9e9fa542d56?source=copy_link#306664cd6716803aa3e7f67f13fa08d7) |
+
+5. 객체 지향과 메타프로그래밍
+
+| 주제 | 핵심 개념 | 실무 연결 | 학습 자료 |
+|------|-----------|-----------|-----------|
+| 프로토타입 | 프로토타입 체인, \_\_proto\_\_, prototype, 상속 메커니즘 | 상속 구현, Class vs Factory 함수 선택, 성능 최적화 | [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/prototype.js) |
+| Proxy | Proxy 핸들러, 트랩(trap), 가로채기 패턴 | 반응성 시스템 구현 (Vue 3 reactive), 유효성 검사 | [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/proxy.js) |
+| Reflect | Reflect API, 메타프로그래밍, Proxy와의 조합 | Proxy 핸들러 구현, 안전한 속성 접근 | [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/reflect.js) |
+
+6. 브라우저 API
+
+| 주제 | 핵심 개념 | 실무 연결 | 학습 자료 |
+|------|-----------|-----------|-----------|
+| async & defer | script 로딩 전략, DOMContentLoaded | 성능 최적화, 렌더링 블로킹 방지, 스크립트 실행 순서 제어 | [Archive](archive/JavaScript/async_and_defer.md) |
 
 ---
 
