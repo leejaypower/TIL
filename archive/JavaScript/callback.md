@@ -129,7 +129,7 @@ userStorage.loginUser(
 
 <br>
 
-[promise](https://github.com/leejaypower/TIL/blob/main/JavaScript/promise.md)와 [aync/await]()를 통해서 비동기 코드를 깔끔하게 작성할 수 있고, 병렬적, 효율적으로 네트워크 통신을 해결할 수 있다.
+promise와 async/await를 통해서 비동기 코드를 깔끔하게 작성할 수 있고, 병렬적, 효율적으로 네트워크 통신을 해결할 수 있다.
 
 ```javascript
 // 콜백지옥을 promise로 바꾸기
