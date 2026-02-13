@@ -60,7 +60,7 @@ TIL은 이들을 연결하고 매핑하는 역할을 합니다.
 | Reflect | Reflect API, 메타프로그래밍 | Proxy 핸들러 구현 | [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/reflect.js) 
 | **비동기 처리** |
 | Callback | 콜백 함수, 콜백 지옥 | 레거시 API 래핑, 에러 핸들링 패턴 | [Archive](archive/JavaScript/callback.md) 
-| Promise | 체이닝, catch, finally, Promise.all | API 순차/병렬 호출, 에러 전파 | [Archive](archive/JavaScript/promise.md) 
+| Promise | 체이닝, catch, finally, Promise.all | API 순차/병렬 호출, 에러 전파 | [Archive](archive/JavaScript/promise.md) [Playground](https://github.com/leejaypower/play-ground/blob/main/javascript/promise.js)
 | async/await | 동기적 코드 작성, try-catch | 복잡한 비동기 플로우, 가독성 향상 | [Archive](archive/JavaScript/async_await.md) 
 | **브라우저 API** |
 | async & defer | script 로딩 전략 | 성능 최적화, 렌더링 블로킹 방지 | [Archive](archive/JavaScript/async_and_defer.md) 
