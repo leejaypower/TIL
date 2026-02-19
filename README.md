@@ -102,8 +102,8 @@ TIL은 이들을 연결하고 매핑하는 역할을 합니다.
 |------|-----------|-----------|-----------|
 | 기본 타입 | 타입 추론, 타입 단언, union, intersection | API 응답 타입 정의, null 안전성 | [Playground](https://github.com/leejaypower/play-ground/blob/main/typescript/type/basic-type.ts) 
 | Type vs Interface | 확장 방식, 선언 병합, 유니온 타입 | 외부 라이브러리 타입 확장, 컴포넌트 Props 정의 | [Playground](https://github.com/leejaypower/play-ground/blob/main/typescript/type/type-vs-interface.ts) 
-| 제네릭 | 재사용 가능한 타입, 타입 파라미터 | 공통 컴포넌트, 유틸 함수, API 래퍼 | [Playground](https://github.com/leejaypower/play-ground/blob/main/typescript/type/generic.ts) 
-| 유틸리티 타입 | Partial, Pick, Omit, Record, ReturnType | 폼 데이터 부분 수정, 타입 변환, API 응답 매핑 | [Playground](https://github.com/leejaypower/play-ground/blob/main/typescript/type/utility-type.ts) 
+| 제네릭 | 재사용 가능한 타입, 타입 파라미터 | 공통 컴포넌트, 유틸 함수, API 래퍼 | [Playground](https://github.com/leejaypower/play-ground/blob/main/typescript/type/generic.ts) [Notion](https://www.notion.so/TS-2f4664cd671680e68a47e20230589d5a?source=copy_link#30c664cd671680089f10e14a8feae501)
+| 유틸리티 타입 | Partial, Pick, Omit, Record, ReturnType | 폼 데이터 부분 수정, 타입 변환, API 응답 매핑 | [Playground](https://github.com/leejaypower/play-ground/blob/main/typescript/type/utility-type.ts) [Notion](https://www.notion.so/TS-2f4664cd671680e68a47e20230589d5a?source=copy_link#30c664cd671680099ab5ea6c3f8164d4)
 | OOP | class, interface, 추상화, 캡슐화 | 아키텍처 설계, DIP 원칙 적용 | [Playground](https://github.com/leejaypower/play-ground/blob/main/typescript/oop/) 
 
 ---
